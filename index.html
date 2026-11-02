@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Trivia</title>
+  <meta name="description" content="A command-line trivia game about JavaScript. Answer questions against the clock and get instant feedback.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>JavaScript Trivia</h1>
+    <p class="tagline">A command-line quiz game. Answer against the clock and get instant feedback.</p>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>About</h2>
+      <p>
+        This game runs in your terminal, not in the browser. It asks 10 JavaScript questions
+        one at a time, tells you straight away if you were right, and shows your score at the end.
+      </p>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>Start a game and answer questions one after another</li>
+        <li>Instant feedback: correct, incorrect or time's up</li>
+        <li>15 seconds per question and 120 seconds for the whole game</li>
+        <li>Final score, points and a list of questions to review</li>
+        <li>Play again without restarting</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to play</h2>
+      <ol>
+        <li>Install <a href="https://nodejs.org">Node.js</a> (version 18 or newer).</li>
+        <li>Open a terminal in the project folder.</li>
+        <li>Start the game:</li>
+      </ol>
+      <pre class="command"><code>npm start</code></pre>
+      <p>Type the letter of your answer (A to D) or its number (1 to 4) and press Enter. Type <code>q</code> to quit.</p>
+    </section>
+
+    <section>
+      <h2>What it looks like</h2>
+      <pre class="terminal" aria-label="Example of the game in a terminal"><code>=== JavaScript Trivia ===
+What is your name? Peter
+
+Question 1 of 10
+Which keyword declares a variable that cannot be reassigned?
+  A) var
+  B) let
+  C) const
+  D) static
+Timer: you have 15 seconds. Type A-D (or 1-4), or q to quit.
+Your answer: C
+<span class="correct">Correct!</span>
+
+Question 2 of 10
+What does typeof [] return?
+  A) "array"
+  B) "object"
+  C) "list"
+  D) "undefined"
+Timer: you have 15 seconds. Type A-D (or 1-4), or q to quit.
+Your answer: A
+<span class="wrong">Incorrect. The correct answer was: "object"</span></code></pre>
+    </section>
+
+</body>
+</html>

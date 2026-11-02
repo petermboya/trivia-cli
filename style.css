@@ -1,0 +1,105 @@
+/* style.css
+   Simple page styles. Colours used:
+   - blue for links and the header
+   - dark grey for text and the terminal box
+   - light grey for the background
+*/
+
+:root {
+  --blue: #2563eb;
+  --dark: #1f2937;
+  --light: #f3f4f6;
+  --white: #ffffff;
+  --correct: #4ade80;
+  --wrong: #f87171;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--light);
+}
+
+.header {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: var(--white);
+  background: var(--blue);
+}
+
+.header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--white);
+  border-radius: 8px;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--blue);
+}
+
+a {
+  color: var(--blue);
+}
+
+code {
+  font-family: "Courier New", Consolas, monospace;
+}
+
+/* Boxes that show terminal text */
+pre {
+  margin: 1rem 0 0;
+  padding: 1rem;
+  overflow-x: auto;
+  color: var(--white);
+  background: var(--dark);
+  border-radius: 6px;
+}
+
+.correct {
+  color: var(--correct);
+}
+
+.wrong {
+  color: var(--wrong);
+}
+
+.footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--dark);
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
