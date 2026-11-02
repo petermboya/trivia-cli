@@ -63,4 +63,7 @@ trivia-cli/
 5. If the question timer or the game timer runs out, the answer counts as incorrect.
 6. At the end `buildSummary` prints your score using the saved results.
 
+7. ## Links
+8. https://github.com/petermboya/trivia-cli
+
 
